@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            text-align: center;
+            padding:0 0 50px 0;
+        }
+        h1{
+            text-align: center;
+        }
+        #allmap{
+            width: 800px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        select{
+            margin-bottom: 40px;
+        }
+        ul li{
+            width:300px;
+            text-align: left;
+            margin: 0 auto;
+            list-style: none;
+            padding-bottom: 10px;
+        }
+        ul li:first-child input{
+            margin-left: 41px;
+        }
+        ul li:last-child{
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="js/My97DatePicker/skin/WdatePicker.css">
+</head>
+<body>
+<h1>路线寻迹</h1>
+<ul>
+    <li>uid: <input type="text" id="uname" value="1" disabled></li>
+    <li>开始时间: <input class="Wdate" type="text" id="start" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" style="min-width:150px;text-align: center"/></li>
+    <li>结束时间: <input class="Wdate" type="text" id="end" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" style="min-width:150px;text-align: center"/></li>
+    <li><button onclick="btn()">提交</button></li>
+</ul>
+<!--<input class="Wdate" type="text" id="d15" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" style="min-width:150px;text-align: center"/>-->
+
+<div id="allmap"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=C0Y0oSSNL4auqXBjwxcerDVMNqkVXaNy"></script>
+<script src="./js/index.js"></script>
+<script src="./js/My97DatePicker/WdatePicker.js"></script>
+</body>
+</html>
