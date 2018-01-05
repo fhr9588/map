@@ -24,7 +24,6 @@ function timestamp(times){
     return timestamp2;
 }
 
-
 //提交
 function btn(){
     var uid=$('#uname').val();
