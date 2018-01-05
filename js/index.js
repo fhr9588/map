@@ -15,6 +15,7 @@ function getToday(){
     return str;
 }
 
+
 //转换时间戳
 function timestamp(times){
     //var timestamp2 = Date.parse(new Date(times));
@@ -23,6 +24,7 @@ function timestamp(times){
     timestamp2 = Date.parse(new Date(timestamp2)) / 1000;
     return timestamp2;
 }
+
 
 //提交
 function btn(){
@@ -56,6 +58,8 @@ function btn(){
         alert('请填写完整后提交');
     }
 }
+
+
 
 
 
