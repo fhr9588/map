@@ -17,8 +17,10 @@ function getToday(){
 
 //转换时间戳
 function timestamp(times){
-    var timestamp2 = Date.parse(new Date(times));
-    timestamp2 = timestamp2 / 1000;
+    //var timestamp2 = Date.parse(new Date(times));
+    //ios设备Date.parse()不支持"-"的格式,所以要转换成"/"格式
+    var timestamp2 = times.replace(/-/g, "/");
+    timestamp2 = Date.parse(new Date(timestamp2)) / 1000;
     return timestamp2;
 }
 
